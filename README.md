@@ -31,7 +31,14 @@ The following **additional** features are implemented:
 
 Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
 
-<div style="position: relative; padding-bottom: 216.86746987951807%; height: 0;"><iframe src="https://www.loom.com/embed/4396d8cee4f94d478b9ce38b2c42f86a?sid=dae4a76d-64d8-4c61-a9d9-e8b779f8b242" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div>
+    <a href="https://www.loom.com/share/4396d8cee4f94d478b9ce38b2c42f86a">
+      <p>Simulator - iPhone 16 Pro - 13 March 2025 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/4396d8cee4f94d478b9ce38b2c42f86a">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4396d8cee4f94d478b9ce38b2c42f86a-c2465e82f58b7baa-full-play.gif">
+    </a>
+  </div>
 
 ## Notes
 It honestly looks like i didn't try but I worked really hard to make this work. Game logic isn't my strong suit because I overthink it too much. I think writing everything down would have helped me more and allowing more time.
