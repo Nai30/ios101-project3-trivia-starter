@@ -1,51 +1,37 @@
 import Foundation
 
-struct TriviaElements {
-    let triviaCode: TriviaCode
+struct TriviaAPIResponse: Decodable{
+    let results:[Question]
 }
 
-enum TriviaCode {
-    case politics
-    case TV
-    case science
-
-    // Use this for the title of each category
-    var description: String {
-        switch self {
-        case .politics:
-            return "Politics"
-        case .TV:
-            return "TV Show"
-        case .science:
-            return "Science"
-        }
-    }
-}
-
-struct Question {
+struct Question: Decodable {
     let text: String
     let choices: [String]
     let correctAnswer: String
-    let category: TriviaCode
+    let category: String
+    let type: String
+    let difficulty: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case text="question"
+        case incorrectAnswers="incorrect_answers"
+        case correctAnswer="correct_answer"
+        case category
+        case type
+        case difficulty
+    }
+    init(from decoder: Decoder)throws {
+        let container = try decoder.container(keyedBy:CodingKeys.self)
+        text = try container.decode(String.self, forKey: .text)
+        let incorrectAnswers = try container.decode([String].self, forKey:.incorrectAnswers)
+        correctAnswer = try container.decode(String.self,forKey: .correctAnswer)
+        category = try container.decode(String.self, forKey: .category)
+        type = try container.decode(String.self, forKey: .type)
+        difficulty = try container.decode(String.self, forKey: .difficulty)
+        choices = (incorrectAnswers + [correctAnswer]).shuffled()
+        
+    }
 }
 
-let questions: [Question] = [
-    Question(
-        text: "Which president endorsed the New Deal Act?",
-        choices: ["Benjamin Franklin", "Barack Obama", "Franklin D. Roosevelt", "Harry S. Truman"],
-        correctAnswer: "Franklin D. Roosevelt",
-        category: .politics
-    ),
-    Question(
-        text: "Who is the host of the show 'What Would You Do?'",
-        choices: ["Chris Hansen", "John Quinones", "Anderson Cooper", "Ellen Degeneres"],
-        correctAnswer: "John Quinones",
-        category: .TV
-    ),
-    Question(
-        text: "What is the chemical symbol for gold",
-        choices: ["Ag", "Au", "Cu", "Pb"],
-        correctAnswer: "Au",
-        category: .science
-    )
-]
+
+
