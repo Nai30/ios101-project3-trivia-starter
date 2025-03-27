@@ -8,7 +8,7 @@
 import Foundation
 class TriviaService{
     static func fetchTriviaElements (completion: @escaping ([Question]) -> Void){
-         let url = URL(string:"https://opentdb.com/api.php?amount=7&type=boolean")!
+         let url = URL(string:"https://opentdb.com/api.php?amount=7")!
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard error==nil else{
                 assertionFailure("Invalid response")
