@@ -1,5 +1,4 @@
-# ios101-project3-trivia-starter
-# Project 3 - *Name of App Here*
+# Project 4 - *Name of App Here*
 
 Submitted by: **Your Name Here**
 
@@ -11,42 +10,43 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-- [x] User can view the current question and 4 different answers
-- [ ] User can view the next question after tapping an answer
-- [x] User can answer at least 3 different questions
+- [x] User can view and answer at least 5 trivia questions.
+- [x] App retrieves question data from the Open Trivia Database API.
+- [x] Fetch a different set of questions if the user indicates they would like to reset the game.
+- [x] Users can see score after submitting all questions.
+- [x] True or False questions only have two options.
 
 
 The following **optional** features are implemented:
 
-- [ ] User can use the vertical orientation of the app on any device
-- [ ] User can track the question they are on and how many questions are left
-- [ ] User can see how many questions they got correct after answering all questions
-- [ ] User should be able to restart the game after they've finished answering all questions
+  
+- [ ] Allow the user to choose a specific category of questions.
+- [x] Provide the user feedback on whether each question was correct before navigating to the next.
 
 The following **additional** features are implemented:
 
-- [x] List anything else that you can get done to improve the app functionality!
+- [ ] A point system
+- [ ] An option to pick the topic
 
 ## Video Walkthrough
-
-Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
-
 <div>
-    <a href="https://www.loom.com/share/4396d8cee4f94d478b9ce38b2c42f86a">
-      <p>Simulator - iPhone 16 Pro - 13 March 2025 - Watch Video</p>
+    <a href="https://www.loom.com/share/72dd89b8ed054fce9268484bfcde42f5">
+      <p>Simulator - iPhone 16 Pro - 26 March 2025 - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/4396d8cee4f94d478b9ce38b2c42f86a">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4396d8cee4f94d478b9ce38b2c42f86a-c2465e82f58b7baa-full-play.gif">
+    <a href="https://www.loom.com/share/72dd89b8ed054fce9268484bfcde42f5">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/72dd89b8ed054fce9268484bfcde42f5-25a8d7c019189ef7-full-play.gif">
     </a>
   </div>
+Here is a reminder on how to embed Loom videos on GitHub. Feel free to remove this reminder once you upload your README. 
+
+[Guide]](https://www.youtube.com/watch?v=GA92eKlYio4) .
 
 ## Notes
-It honestly looks like i didn't try but I worked really hard to make this work. Game logic isn't my strong suit because I overthink it too much. I think writing everything down would have helped me more and allowing more time.
-Describe any challenges encountered while building the app.
+I couldn't figure out certain things related to the UI or how to use the API output right.
 
 ## License
 
-    Copyright [yyyy] [Naima]
+    Copyright [2025] [Naima Marseille]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
