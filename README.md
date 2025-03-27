@@ -1,10 +1,10 @@
 # Project 4 - *Name of App Here*
 
-Submitted by: **Your Name Here**
+Submitted by: **Naima Marseille**
 
-**Name of your app** is an app that ... [TODO] 
+**Trivia** is an app that ... [TODO] 
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
